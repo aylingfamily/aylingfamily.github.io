@@ -1,0 +1,203 @@
+/* Base styles */
+:root {
+  --primary-color: #3a5a40;
+  --secondary-color: #a3b18a;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --light-accent: #dad7cd;
+  --dark-accent: #344e41;
+  --font-family: 'Georgia', serif;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin-right: 1.5rem;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+  padding: 2rem 0;
+}
+
+h1, h2, h3 {
+  color: var(--dark-accent);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Person profile styles */
+.person-profile {
+  margin-bottom: 2rem;
+}
+
+.person-header {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.person-image {
+  flex: 0 0 200px;
+  margin-right: 2rem;
+}
+
+.person-image img {
+  width: 100%;
+  border-radius: 5px;
+  border: 3px solid var(--secondary-color);
+}
+
+.person-info h1 {
+  margin-top: 0;
+}
+
+.person-dates {
+  font-style: italic;
+  color: #666;
+}
+
+.person-bio {
+  margin-bottom: 2rem;
+}
+
+.family-section {
+  margin-bottom: 1.5rem;
+}
+
+.family-section ul {
+  padding-left: 1.5rem;
+}
+
+/* Family tree styles */
+.family-tree {
+  margin-top: 2rem;
+}
+
+.generation {
+  margin-bottom: 3rem;
+}
+
+.generation-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.person-card {
+  width: 250px;
+  border: 1px solid var(--light-accent);
+  border-radius: 5px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.person-card .person-image {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  margin-right: 0;
+}
+
+.person-card .person-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.person-card .person-details {
+  padding: 1rem;
+}
+
+.person-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.person-card .person-dates {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.person-card .spouse {
+  font-size: 0.9rem;
+}
+
+.generation-list {
+  margin-bottom: 2rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--light-accent);
+  color: var(--dark-accent);
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .person-header {
+    flex-direction: column;
+  }
+  
+  .person-image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .generation-members {
+    justify-content: center;
+  }
+} 

@@ -1,0 +1,64 @@
+---
+layout: default
+---
+{% assign person_data = site.data.family.people | where: "id", page.person_id | first %}
+
+<div class="person-profile">
+  <div class="person-header">
+    {% if person_data.image %}
+    <div class="person-image">
+      <img src="{{ '/assets/images/' | append: person_data.image | relative_url }}" alt="{{ person_data.name }}">
+    </div>
+    {% endif %}
+    <div class="person-info">
+      <h1>{{ person_data.name }}</h1>
+      <p class="person-dates">
+        {% if person_data.birth_date %}{{ person_data.birth_date | date: "%B %-d, %Y" }}{% endif %}
+        {% if person_data.death_date %} - {{ person_data.death_date | date: "%B %-d, %Y" }}{% endif %}
+      </p>
+    </div>
+  </div>
+
+  <div class="person-bio">
+    {{ content }}
+    {% if person_data.bio %}
+    <p>{{ person_data.bio }}</p>
+    {% endif %}
+  </div>
+
+  <div class="person-family">
+    <h2>Family Connections</h2>
+    
+    {% if person_data.parents.size > 0 %}
+    <div class="family-section">
+      <h3>Parents</h3>
+      <ul>
+        {% for parent_id in person_data.parents %}
+          {% assign parent = site.data.family.people | where: "id", parent_id | first %}
+          <li><a href="{{ '/people/' | append: parent_id | append: '.html' | relative_url }}">{{ parent.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if person_data.spouse %}
+    <div class="family-section">
+      <h3>Spouse</h3>
+      {% assign spouse = site.data.family.people | where: "id", person_data.spouse | first %}
+      <p><a href="{{ '/people/' | append: person_data.spouse | append: '.html' | relative_url }}">{{ spouse.name }}</a></p>
+    </div>
+    {% endif %}
+
+    {% if person_data.children.size > 0 %}
+    <div class="family-section">
+      <h3>Children</h3>
+      <ul>
+        {% for child_id in person_data.children %}
+          {% assign child = site.data.family.people | where: "id", child_id | first %}
+          <li><a href="{{ '/people/' | append: child_id | append: '.html' | relative_url }}">{{ child.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</div> 

@@ -1,0 +1,71 @@
+# _data/family.yml
+people:
+  - id: john_ayling
+    name: John Ayling
+    birth_date: 1945-06-15
+    death_date: 2018-11-30
+    bio: Beloved father and grandfather who enjoyed fishing and woodworking.
+    image: john_ayling.jpg
+    parents: [robert_ayling, mary_smith]
+    spouse: sarah_williams
+    children: [michael_ayling, emily_ayling]
+    
+  - id: sarah_williams
+    name: Sarah Williams
+    birth_date: 1948-03-22
+    death_date: 
+    bio: Former teacher who loves gardening and baking for her grandchildren.
+    image: sarah_williams.jpg
+    parents: [james_williams, helen_davis]
+    spouse: john_ayling
+    children: [michael_ayling, emily_ayling]
+    
+  - id: michael_ayling
+    name: Michael Ayling
+    birth_date: 1975-09-12
+    death_date: 
+    bio: Software engineer who inherited his father's love for fishing.
+    image: michael_ayling.jpg
+    parents: [john_ayling, sarah_williams]
+    spouse: jennifer_brown
+    children: [david_ayling, lisa_ayling]
+    
+  - id: emily_ayling
+    name: Emily Ayling
+    birth_date: 1978-04-05
+    death_date: 
+    bio: Pediatrician who volunteers at local clinics in her spare time.
+    image: emily_ayling.jpg
+    parents: [john_ayling, sarah_williams]
+    spouse: thomas_clark
+    children: [anna_clark, james_clark]
+    
+  - id: robert_ayling
+    name: Robert Ayling
+    birth_date: 1920-08-23
+    death_date: 1998-02-17
+    bio: Served in World War II and later ran a local hardware store.
+    image: robert_ayling.jpg
+    parents: []
+    spouse: mary_smith
+    children: [john_ayling, patricia_ayling]
+    
+  - id: mary_smith
+    name: Mary Smith
+    birth_date: 1923-11-10
+    death_date: 2005-07-29
+    bio: Homemaker who was known for her beautiful garden and homemade pies.
+    image: mary_smith.jpg
+    parents: []
+    spouse: robert_ayling
+    children: [john_ayling, patricia_ayling]
+
+generations:
+  - name: "First Generation"
+    members: [robert_ayling, mary_smith, james_williams, helen_davis]
+  - name: "Second Generation"
+    members: [john_ayling, sarah_williams, patricia_ayling]
+  - name: "Third Generation"
+    members: [michael_ayling, emily_ayling]
+  - name: "Fourth Generation"
+    members: [david_ayling, lisa_ayling, anna_clark, james_clark] 

@@ -1,0 +1,28 @@
+title: Ayling Family History
+description: A family tree and history of the Ayling family
+baseurl: ""
+url: ""
+github_username: aylingfamily
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Collections for family members
+collections:
+  people:
+    output: true
+    permalink: /people/:path/
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "people"
+    values:
+      layout: "person" 
