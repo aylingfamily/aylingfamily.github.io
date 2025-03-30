@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <div>
+      <h1 class="site-title">{{ site.title }}</h1>
+      <p class="site-description">{{ site.description }}</p>
+    </div>
+  </header>
+  
+  <main>
+    {{ content }}
+  </main>
+  
+  <footer>
+    <p>Ayling Family History</p>
+  </footer>
+</body>
+</html> 

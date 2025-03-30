@@ -1,0 +1,31 @@
+# Site settings
+title: Ayling Family History
+description: The history of the Ayling family's journey from England to Canada
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-relative-links
+
+# Default layout for pages
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - README.md
+  - assets/images/README.md 
