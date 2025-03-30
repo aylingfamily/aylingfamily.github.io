@@ -211,4 +211,5 @@ GIVEN AT THE GENERAL REGISTER OFFICE
 
 ## Photos
 **1914**  
-[Placeholder for photo content]
+![Portrait of Henry and Ellen Ayling and Family](/assets/images/1914-ayling-family.jpg)
+*Henry and Ellen Ayling and Family, photographed around 1914 in Kingston*
