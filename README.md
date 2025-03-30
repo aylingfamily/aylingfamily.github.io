@@ -77,13 +77,3 @@ If you have family history, photos, or documents to contribute:
 
 1. Submit them via email to the site maintainers
 2. Or, if you're familiar with GitHub, create a pull request with your additions
-
-## License
-
-This content is family property and not licensed for public use without permission.
-
-## Contact
-
-For questions or contributions, please contact:
-- Jim Ayling - jrayling@example.com
-- Lynn Ayling Hayes - lynnhayes@example.com
